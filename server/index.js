@@ -1,9 +1,14 @@
-import express from "experss";
+// import express from "express";
+const express = require("express");
 import mongoose from "mongoose";
-import cors from "cors";
 import bodyParser from "body-parser";
+import cors from "cors";
+
+import postRoutes from "./routes/posts";
 
 const app = express();
+
+app.use("/posts", postRoutes);
 
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
