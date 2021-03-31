@@ -1,10 +1,10 @@
-// import express from "express";
-const express = require("express");
+import express from "express";
+// const express = require("express");
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cors from "cors";
 
-import postRoutes from "./routes/posts";
+import postRoutes from "../server/routes/posts.js";
 
 const app = express();
 
