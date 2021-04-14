@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TextField, Button, Typography, Paper } from "@material-ui/core";
-import useStyles from "./Styles";
+import useStyles from "./Style";
 import FileBase from "react-file-base64";
 const Form = () => {
   const [postData, setPostData] = useState({
@@ -13,7 +13,7 @@ const Form = () => {
   const classes = useStyles();
   const handleSubmit = () => {};
   const clear = () => {};
-  
+
   return (
     <Paper className={classes.paper}>
       <form
