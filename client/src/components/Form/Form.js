@@ -12,6 +12,8 @@ const Form = () => {
   });
   const classes = useStyles();
   const handleSubmit = () => {};
+  const clear = () => {};
+  
   return (
     <Paper className={classes.paper}>
       <form
